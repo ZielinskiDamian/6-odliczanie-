@@ -1,0 +1,85 @@
+/* .box-number {
+	height: 100px;
+	width: 200px;
+	background-color: red;
+} */
+
+@keyframes znikanie {
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+
+@keyframes pojawieniesie {
+	0%,
+	100% {
+		visibility: visible;
+	}
+}
+
+.countdown {
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+
+.num10 {
+	animation-name: znikanie;
+}
+
+.num9 {
+	animation-name: znikanie;
+	animation-delay: 1s;
+}
+
+.num8 {
+	animation-name: znikanie;
+	animation-delay: 2s;
+}
+
+.num7 {
+	animation-name: znikanie;
+	animation-delay: 3s;
+}
+
+.num6 {
+	animation-name: znikanie;
+	animation-delay: 4s;
+}
+
+.num5 {
+	animation-name: znikanie;
+	animation-delay: 5s;
+}
+
+.num4 {
+	animation-name: znikanie;
+	animation-delay: 6s;
+}
+
+.num3 {
+	animation-name: znikanie;
+	animation-delay: 7s;
+}
+
+.num2 {
+	animation-name: znikanie;
+	animation-delay: 8s;
+}
+
+.num1 {
+	animation-delay: 9s;
+	animation-name: znikanie;
+}
+
+.final {
+	animation-name: pojawieniesie;
+	animation-delay: 10s;
+	animation-iteration-count: infinite;
+}
+
+.final {
+	color: black;
+}
