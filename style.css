@@ -1,28 +1,50 @@
-/* .box-number {
+.box-number {
 	height: 100px;
 	width: 200px;
 	background-color: red;
-} */
+	display: flex;
+	position: relative;
+}
+
+.countdown {
+	/* display: inline-block;
+	align-items: center; */
+	/* position: absolute;
+	top: 30px;
+	left: 90px; */
+	
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.final {
+	font-size: 1.5em;
+	position: absolute;
+	top: 60px;
+	left: 30px;
+}
 
 @keyframes znikanie {
 	0% {
-		visibility: visible;
+		opacity: 1;
+		/* overflow: visible; */
 	}
 	100% {
-		visibility: hidden;
+		/* overflow: hidden; */
+		opacity: 0;
 	}
 }
 
 @keyframes pojawieniesie {
-	0%,
-	100% {
-		visibility: visible;
+	0% {
+		/* overflow: hidden; */
+		opacity: 0;
 	}
-}
-
-.countdown {
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
+	100% {
+		/* overflow: visible; */
+		opacity: 1;
+	}
 }
 
 .num10 {
@@ -70,13 +92,14 @@
 }
 
 .num1 {
-	animation-delay: 9s;
 	animation-name: znikanie;
+	animation-delay: 9s;
 }
 
 .final {
 	animation-name: pojawieniesie;
 	animation-delay: 10s;
+	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 }
 
