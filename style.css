@@ -1,106 +1,78 @@
 .box-number {
-	height: 100px;
-	width: 200px;
+	height: 300px;
+	width: 800px;
 	background-color: red;
 	display: flex;
 	position: relative;
 }
 
 .countdown {
-	/* display: inline-block;
-	align-items: center; */
-	/* position: absolute;
-	top: 30px;
-	left: 90px; */
-	
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: forwards;
-}
-
-.final {
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-name: numbers;
+	opacity: 0;
 	font-size: 1.5em;
 	position: absolute;
 	top: 60px;
 	left: 30px;
 }
 
-@keyframes znikanie {
+@keyframes numbers {
 	0% {
-		opacity: 1;
-		/* overflow: visible; */
-	}
-	100% {
-		/* overflow: hidden; */
 		opacity: 0;
 	}
-}
 
-@keyframes pojawieniesie {
-	0% {
-		/* overflow: hidden; */
-		opacity: 0;
-	}
-	100% {
-		/* overflow: visible; */
+	50% {
 		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
 	}
 }
 
 .num10 {
-	animation-name: znikanie;
+	animation-delay: 0;
 }
 
 .num9 {
-	animation-name: znikanie;
 	animation-delay: 1s;
 }
 
 .num8 {
-	animation-name: znikanie;
 	animation-delay: 2s;
 }
 
 .num7 {
-	animation-name: znikanie;
 	animation-delay: 3s;
 }
 
 .num6 {
-	animation-name: znikanie;
 	animation-delay: 4s;
 }
 
 .num5 {
-	animation-name: znikanie;
 	animation-delay: 5s;
 }
 
 .num4 {
-	animation-name: znikanie;
 	animation-delay: 6s;
 }
 
 .num3 {
-	animation-name: znikanie;
 	animation-delay: 7s;
 }
 
 .num2 {
-	animation-name: znikanie;
 	animation-delay: 8s;
 }
 
 .num1 {
-	animation-name: znikanie;
 	animation-delay: 9s;
 }
 
 .final {
-	animation-name: pojawieniesie;
 	animation-delay: 10s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
 }
 
 .final {
